@@ -31,8 +31,10 @@
     <form> 
         <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 
-            <div>
-                <h1 class="font-bold text-center mb-4">Tambah Pegawai</h1>
+            <div class="justify-items-end">
+                <div>
+                  <h1 class="font-bold text-center mb-4">Tambah Pegawai</h1>
+                </div>
             </div>
                 <div>
                     <div class="mb-2">
