@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Employees;
 use App\Http\Livewire\Mails;
-
+use App\Http\Livewire\Surtug;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +22,9 @@ Route::get('/', function () {
 
 
 Route::get('/employees', Employees::Class);
-
 Route::get('/mails', Mails::Class);
+
+Route::get('/surtug', Surtug::Class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

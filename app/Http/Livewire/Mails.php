@@ -14,7 +14,7 @@ class Mails extends Component
     public function render()
     {
         $this -> mails = Mail::all();
-        return view('livewire.mail');
+        return view('livewire.mails');
     }
 
     public function showModal(){
