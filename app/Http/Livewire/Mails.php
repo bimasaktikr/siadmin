@@ -8,7 +8,7 @@ use App\Models\Mail;
 class Mails extends Component
 {
     public $mails;
-    public $employeeId, $nama, $nip, $jabatan;
+    public $mailId, $jenis, $nomor, $lampiran, $perihal, $tanggal, $tujuan, $isi;
     public $isOpen = 0;
 
     public function render()
@@ -39,7 +39,7 @@ class Mails extends Component
 
         );
 
-        Employee::updateOrCreate([ 'id' => $this-> mailId], [
+        Mail::updateOrCreate([ 'id' => $this-> mailId], [
             'jenis' => $this->jenis,
             'nomor' => $this->nomor,
             'lampiran' => $this->lampiran,
@@ -83,6 +83,6 @@ class Mails extends Component
     }
 
     public function delete ($id) {
-        Employee::find($id)->delete();
+        Mail::find($id)->delete();
     }
 }

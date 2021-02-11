@@ -25,14 +25,14 @@
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <!-- <div>
+                    <div>
                     <button wire:click="showModal()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded">
-                        Tambah Pegawai
+                        Tambah Surat
                     </button>
-                    @if($isOpen)
-                            @include('livewire.create')
+                        @if($isOpen)
+                            @include('livewire.buatsurat')
                         @endif
-                    </div> -->
+                    </div>
                 <table class="table-fixed w-full">
                     <thead class="bg-gray-500">
                         <tr>
